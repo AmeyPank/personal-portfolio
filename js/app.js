@@ -1,3 +1,20 @@
+// H1 Typewriter effect
+
+
+var i = 0;
+var txt = "Amey Pankanti";
+var speed = 800;
+var typewriter1 = document.getElementById("typewriter");
+window.onload = function typewriter() {
+    if (i < txt.length) {
+        typewriter1.innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typewriter, speed);
+    }
+}
+
+
+
 //Header fixed
 
 window.onscroll = function () {
@@ -11,6 +28,7 @@ window.onscroll = function () {
     }
   }
 }
+
 
 //navbar links
 
@@ -98,17 +116,17 @@ let itemPerSlide = 0;
 let sliderDot;
 
 const responsive = [{
-    breakPoint: {
-      width: 0,
-      item: 1,
-    },
+  breakPoint: {
+    width: 0,
+    item: 1,
   },
-  {
-    breakPoint: {
-      width: 991,
-      item: 2,
-    },
+},
+{
+  breakPoint: {
+    width: 991,
+    item: 2,
   },
+},
 ];
 
 function load() {
